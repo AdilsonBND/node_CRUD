@@ -1,0 +1,40 @@
+GET http://localhost:3000/person
+
+###
+
+POST http://localhost:3000/person
+Content-Type: application/json
+
+{
+    "CPF": "000.000.000-00",
+    "name": "Adilson",
+    "approved": true
+    
+}
+###
+
+GET http://localhost:3000/person/62c0805d3c9a4aa005258a80
+
+###
+
+GET http://localhost:3000/person/62c0805d3c9a4aa005258a8z
+
+
+###
+
+PATCH http://localhost:3000/person/62c0805d3c9a4aa005258a80
+Content-Type: application/json
+
+{
+"CPF": "111.111.111-11",
+"name": "Otávswio",
+"approved": true
+}
+
+###
+
+DELETE http://localhost:3000/person/62c080813c9a4aa005258a82
+
+
+###
+GET http://localhost:3000/person/62c080813c9a4aa005258a82
