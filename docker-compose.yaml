@@ -22,7 +22,7 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./.docker/dbdata:/data/db
+      - ./.docker/dbdata:/data/db/node_crud
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
